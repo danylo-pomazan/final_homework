@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.button {
+  align-items: center;
+  background-color: #37806b;
+  color: #ffffff;
+  font: {
+    family: "Open Sans", sans-serif;
+    weight: 700;
+    size: 18px;
+  }
+  padding: 0;
+  height: 50px;
+  border: none;
+  border-radius: 20px 0px;
+}

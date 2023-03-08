@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap");
+
+.sign-up {
+  max-width: 1440px;
+  height: 680px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 772px;
+    height: 306px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  &__input {
+    display: inline-block;
+    height: 48px;
+    background-color: #eeeeee;
+    border-radius: 20px 0px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    &--error {
+      border: 2px solid red;
+    }
+    &--mail {
+      width: 772px;
+      margin-bottom: 90px;
+    }
+    &--name {
+      width: 317px;
+    }
+    &--surname {
+      width: 317px;
+    }
+  }
+  &__input::placeholder {
+    transition: color 0.5s;
+    font-size: 18px;
+  }
+  &__input:focus-visible::placeholder {
+    color: transparent;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 772px;
+  }
+  &__line {
+    display: block;
+    width: 461px;
+    height: 1px;
+    border-top: 1px solid #c4c4c4;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__submit {
+    align-items: center;
+    background-color: #37806b;
+    color: #ffffff;
+    font: {
+      family: "Open Sans", sans-serif;
+      weight: 700;
+      size: 18px;
+    }
+    padding: 0;
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 20px 0px;
+  }
+  &__text {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #646464;
+    height: 56px;
+    width: 647px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #212121;
+    display: block;
+    margin-bottom: 17px;
+    padding-top: 93px;
+  }
+}
