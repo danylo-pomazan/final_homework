@@ -99,7 +99,13 @@
   color: #ffffff;
   background-color: #37806b;
   border-radius: 20px;
-  border: none;
+  border: 2px solid #37806b;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.what-we-do__button:hover {
+  color: #37806b;
+  background-color: #ffffff;
 }
 .what-we-do__button-container {
   display: -webkit-box;

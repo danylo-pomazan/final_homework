@@ -14,20 +14,23 @@
   width: 30px;
   margin-bottom: 86px;
   border-radius: 50%;
-  border: none;
-  background: #ffffff;
+  border: 2px solid #37806b;
   -webkit-box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
           box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: #37806b;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .testimonials__button--active {
-  background: #37806b;
-  color: #ffffff;
   margin-left: 50px;
 }
 .testimonials__button--inactive {
+  margin-left: 1200px;
+}
+.testimonials__button:hover {
   background: #ffffff;
   color: #37806b;
-  margin-left: 1200px;
 }
 .testimonials__subtitle {
   display: block;

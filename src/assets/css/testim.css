@@ -19,7 +19,7 @@
   -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
           box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
   border-radius: 70px 0px;
-  margin-left: 0;
+  margin-left: 100px;
 }
 .testimonial__face {
   display: inline-block;
@@ -56,6 +56,7 @@
   width: 434px;
   margin: 0;
   margin-top: 8px;
+  text-align: start;
 }
 .testimonial__text-container {
   display: -webkit-box;
@@ -74,4 +75,5 @@
   height: 33px;
   width: 360px;
   margin: 0;
+  text-align: start;
 }

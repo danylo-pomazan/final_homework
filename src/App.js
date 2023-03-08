@@ -24,6 +24,42 @@ const LoadingScreen = forwardRef((props, ref) => {
 });
 
 const App = () => {
+  const [isActive, setIsActive] = useState(true);
+
+  useEffect(() => {
+    let timer;
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setIsActive(false);
+      } else {
+        setIsActive(true);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    const startTimer = () => {
+      timer = setTimeout(() => {
+        if (isActive) {
+          if (window.confirm("Ви ще тут?")) {
+            setIsActive(true);
+            startTimer();
+          } else {
+            setIsActive(false);
+            window.close();
+          }
+        }
+      }, 60000); // 1 хвилина в мілісекундах
+    };
+
+    startTimer();
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [isActive]);
+
   const [isLoading, setIsLoading] = useState(true);
   const nodeRef = useRef(null);
   const loadingScreenRef = useRef(null);
