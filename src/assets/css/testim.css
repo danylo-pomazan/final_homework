@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap");
+.testimonial {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 226px;
+  width: 571px;
+  background: #ffffff;
+  -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+          box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+  border-radius: 70px 0px;
+  margin-left: 0;
+}
+.testimonial__face {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-left: -60px;
+}
+.testimonial__job {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #646464;
+}
+.testimonial__name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #212121;
+}
+.testimonial__quotes {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: -40px;
+  margin-top: -100px;
+}
+.testimonial__text {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #646464;
+  height: 84px;
+  width: 434px;
+  margin: 0;
+  margin-top: 8px;
+}
+.testimonial__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 125px;
+  width: 434px;
+  margin-left: 30px;
+}
+.testimonial__title {
+  display: inline-block;
+  height: 33px;
+  width: 360px;
+  margin: 0;
+}

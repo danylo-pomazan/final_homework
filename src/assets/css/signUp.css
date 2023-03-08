@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap");
+.sign-up {
+  max-width: 1440px;
+  height: 680px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.sign-up__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 772px;
+  height: 306px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+.sign-up__input {
+  display: inline-block;
+  height: 48px;
+  background-color: #eeeeee;
+  border-radius: 20px 0px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+.sign-up__input--error {
+  border: 2px solid red;
+}
+.sign-up__input--mail {
+  width: 772px;
+  margin-bottom: 90px;
+}
+.sign-up__input--name {
+  width: 317px;
+}
+.sign-up__input--surname {
+  width: 317px;
+}
+.sign-up__input::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+.sign-up__input::-moz-placeholder {
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+.sign-up__input:-ms-input-placeholder {
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+.sign-up__input::-ms-input-placeholder {
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+.sign-up__input::placeholder {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+.sign-up__input:focus-visible::-webkit-input-placeholder {
+  color: transparent;
+}
+.sign-up__input:focus-visible::-moz-placeholder {
+  color: transparent;
+}
+.sign-up__input:focus-visible:-ms-input-placeholder {
+  color: transparent;
+}
+.sign-up__input:focus-visible::-ms-input-placeholder {
+  color: transparent;
+}
+.sign-up__input:focus-visible::placeholder {
+  color: transparent;
+}
+.sign-up__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 772px;
+}
+.sign-up__line {
+  display: block;
+  width: 461px;
+  height: 1px;
+  border-top: 1px solid #c4c4c4;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sign-up__submit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #37806b;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0;
+  height: 50px;
+  width: 180px;
+  border: none;
+  border-radius: 20px 0px;
+}
+.sign-up__text {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #646464;
+  height: 56px;
+  width: 647px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.sign-up__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #212121;
+  display: block;
+  margin-bottom: 17px;
+  padding-top: 93px;
+}
