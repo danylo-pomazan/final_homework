@@ -14,19 +14,21 @@
     width: 30px;
     margin-bottom: 86px;
     border-radius: 50%;
-    border: none;
-    background: #ffffff;
+    border: 2px solid #37806b;
     box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: #37806b;
+    color: #ffffff;
+    transition: background-color 0.5s;
     &--active {
-      background: #37806b;
-      color: #ffffff;
       margin-left: 50px;
     }
     &--inactive {
-      background: #ffffff;
-      color: #37806b;
       margin-left: 1200px;
     }
+  }
+  &__button:hover {
+    background: #ffffff;
+    color: #37806b;
   }
   &__subtitle {
     display: block;

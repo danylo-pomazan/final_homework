@@ -10,6 +10,13 @@
   font-size: 18px;
   padding: 0;
   height: 50px;
-  border: none;
+  border: 2px solid #37806b;
   border-radius: 20px 0px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #37806b;
 }
