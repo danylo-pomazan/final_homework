@@ -9,8 +9,8 @@
   text-align: center;
   background-color: #f8f8f8;
   opacity: 0;
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .news__container {
   display: -webkit-box;
