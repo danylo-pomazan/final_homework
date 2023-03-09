@@ -2,10 +2,12 @@
 .services {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 1440px;
   margin-top: 110px;
   margin-bottom: 471px;
-  gap: 80px;
-  justify-content: flex-start;
+  gap: 40px;
+  justify-content: center;
   &__card {
     display: flex;
     flex-direction: row;
