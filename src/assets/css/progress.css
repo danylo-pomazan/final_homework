@@ -24,3 +24,8 @@ progress::-moz-progress-bar {
   background-color: #caa892;
   border-radius: 0px;
 }
+@media screen and (max-width: 760px) {
+  progress {
+    display: none;
+  }
+}
