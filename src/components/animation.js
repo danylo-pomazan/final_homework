@@ -1,4 +1,5 @@
 import "../assets/css/animation.css";
+import React from "react";
 
 function Animation() {
   return (
