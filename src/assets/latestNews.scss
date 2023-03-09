@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap");
 .news {
   max-width: 1440px;
-  height: 1100px;
+  min-height: 1100px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -12,6 +12,7 @@
   transition: opacity 2s ease-in-out;
   &__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 80px;
     gap: 90px;
@@ -19,10 +20,11 @@
   }
   &__container-column {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 606px;
+    max-width: 606px;
     transition: scale 0.8s;
   }
   &__container-column:hover {

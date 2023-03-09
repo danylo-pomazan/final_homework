@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 772px;
+    max-width: 772px;
     height: 306px;
     margin-left: auto;
     margin-right: auto;
@@ -33,7 +33,7 @@
       border: 2px solid red;
     }
     &--mail {
-      width: 772px;
+      width: calc(600px + 11.19vw);
       margin-bottom: 90px;
     }
     &--name {
@@ -55,7 +55,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 772px;
+    max-width: 772px;
+    gap: 9.11vw;
   }
   &__line {
     display: block;

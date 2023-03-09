@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap");
 .success {
   max-width: 1440px;
-  margin-top: 200px;
-  margin-bottom: 221px;
+  margin-top: 13vw;
+  margin-bottom: 14.39vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,10 +21,10 @@
 }
 .success__extra-title {
   display: block;
-  height: 350px;
+  height: calc(250px + 6.51vw);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 288px;
+  font-size: calc(230px + 3.58vw);
   margin-bottom: 25px;
   mix-blend-mode: lighten;
   background-color: #ffffff;
@@ -38,21 +38,21 @@
 }
 .success__image {
   display: inline-block;
-  width: 715px;
-  height: 613px;
+  width: clamp(300px, 100%, 715px);
+  height: auto;
   position: relative;
   top: -32px;
   left: -32px;
-  border-bottom-right-radius: 140px;
-  border-top-left-radius: 140px;
+  border-bottom-right-radius: 9.1vw;
+  border-top-left-radius: 9.1vw;
 }
 .success__image-container {
   display: inline-block;
-  width: 715px;
-  height: 613px;
+  width: clamp(300px, 100%, 715px);
+  height: clamp(280px, 100%, 613px);
   border: 2px solid #b0855b;
-  border-radius: 140px 0px;
-  margin-left: 32px;
+  border-radius: 9.1vw 0px;
+  margin-left: 2vw;
 }
 .success__text-container {
   display: -webkit-box;
@@ -67,7 +67,8 @@
 .success__title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 5vw;
+  line-height: 7vw;
   margin-top: 0;
   margin-bottom: 20px;
   mix-blend-mode: lighten;

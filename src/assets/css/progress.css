@@ -2,7 +2,10 @@ progress {
   position: fixed;
   top: 80px;
   z-index: 9999;
-  width: 1440px;
+  max-width: 1440px;
+  min-width: 760px;
+  width: 93.75vw;
+
   border-radius: 0;
 
   height: 7px;
