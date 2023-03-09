@@ -23,10 +23,10 @@
   transition: background-color 0.5s;
 }
 .testimonials__button--active {
-  margin-left: 50px;
+  margin-left: 3.25vw;
 }
 .testimonials__button--inactive {
-  margin-left: 1200px;
+  margin-left: calc(100px + 65vw);
 }
 .testimonials__button:hover {
   background: #ffffff;

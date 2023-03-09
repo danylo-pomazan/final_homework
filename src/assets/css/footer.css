@@ -8,8 +8,8 @@
   padding-top: 90px;
 }
 .footer__cat-fact {
-  display: inline-block;
-  width: 900px;
+  display: block;
+  max-width: 900px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -17,7 +17,7 @@
   color: #212121;
   margin-top: 45px;
   margin-bottom: 20px;
-  margin-left: calc(50% - 450px);
+  margin-left: 16.27vw;
   text-align: center;
 }
 .footer__column-title {
@@ -54,6 +54,8 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer__copyright {
   font-family: "Open Sans", sans-serif;

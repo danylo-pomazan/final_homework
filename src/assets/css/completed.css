@@ -9,6 +9,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -33,13 +35,14 @@
           justify-content: center;
   height: 185px;
   width: 185px;
+  min-width: 140px;
   background: #ffffff;
   -webkit-box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
   border-radius: 40px 0px;
 }
 .completed__card--to-bottom {
-  margin-top: 150px;
+  margin-top: 9.77vw;
 }
 .completed__card--to-top {
   margin-top: 0;
@@ -76,17 +79,18 @@
       -ms-flex-align: center;
           align-items: center;
   height: 278px;
-  width: 1343px;
+  max-width: 87.43vw;
 }
 .completed__line {
   display: inline-block;
-  height: 96px;
-  width: 218px;
+  height: 6.25vw;
+  max-width: 14vw;
+  min-width: 0;
   margin-top: 90px;
 }
 .completed__title {
   display: inline-block;
-  width: 830px;
+  max-width: 830px;
   height: 120px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;

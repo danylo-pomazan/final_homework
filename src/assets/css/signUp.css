@@ -22,7 +22,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 772px;
+  max-width: 772px;
   height: 306px;
   margin-left: auto;
   margin-right: auto;
@@ -44,7 +44,7 @@
   border: 2px solid red;
 }
 .sign-up__input--mail {
-  width: 772px;
+  width: calc(600px + 11.19vw);
   margin-bottom: 90px;
 }
 .sign-up__input--name {
@@ -104,7 +104,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 772px;
+  max-width: 772px;
+  gap: 9.11vw;
 }
 .sign-up__line {
   display: block;
