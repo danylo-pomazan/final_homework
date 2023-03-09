@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/header.css";
 import logo from "../assets/images/logo.png";
 import headerImg from "../assets/images/header_img.png";
@@ -6,38 +6,51 @@ import Button from "./button";
 import ScrollProgressBar from "./progressbar";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header id="home" className="header">
       <nav className="nav-menu">
         <img src={logo} alt="logo" className="header__logo" />
-        <ul className="nav-menu__container">
-          <li className="nav-menu__item">
-            <a href="#home" className="nav-menu__link">
-              HOME
-            </a>
-          </li>
-
-          <li className="nav-menu__item">
-            <a href="#serv" className="nav-menu__link">
-              SERVICES
-            </a>
-          </li>
-          <li className="nav-menu__item">
-            <a href="#about" className="nav-menu__link">
-              ABOUT
-            </a>
-          </li>
-          <li className="nav-menu__item">
-            <a href="#blog" className="nav-menu__link">
-              BLOG
-            </a>
-          </li>
-          <li className="nav-menu__button">
-            <a href="#sign" className="nav-menu__button-link">
-              SIGN UP
-            </a>
-          </li>
-        </ul>
+        <div>
+          <button className="nav-menu__toggle" onClick={handleToggle}>
+            {isOpen ? "Close menu" : "Open menu"}
+          </button>
+          <ul
+            className={`nav-menu__container ${
+              isOpen ? "nav-menu__container--show" : ""
+            }`}
+          >
+            <li className="nav-menu__item">
+              <a href="#home" className="nav-menu__link">
+                HOME
+              </a>
+            </li>
+            <li className="nav-menu__item">
+              <a href="#serv" className="nav-menu__link">
+                SERVICES
+              </a>
+            </li>
+            <li className="nav-menu__item">
+              <a href="#about" className="nav-menu__link">
+                ABOUT
+              </a>
+            </li>
+            <li className="nav-menu__item">
+              <a href="#blog" className="nav-menu__link">
+                BLOG
+              </a>
+            </li>
+            <li className="nav-menu__button">
+              <a href="#sign" className="nav-menu__button-link">
+                SIGN UP
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <ScrollProgressBar />
       <div className="header__container">
