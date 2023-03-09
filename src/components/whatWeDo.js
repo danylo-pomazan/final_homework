@@ -1,53 +1,92 @@
 import "../assets/css/whatWeDo.css";
 import React from "react";
-import designImg from "../assets/images/sr.png";
-import arcImg from "../assets/images/ere.png";
-import planImg from "../assets/images/sd.png";
+import data from "../assets/data/data.json";
 
 function WhatWeDo() {
+  const [category, setCategory] = React.useState("all");
+
+  const handleCategoryClick = (cat) => {
+    setCategory(cat);
+  };
+
+  let filteredData = data;
+  if (category !== "all") {
+    filteredData = data.filter((item) => item.category === category);
+  }
+
+  if (category === "all") {
+    filteredData = filteredData.slice(0, 3);
+  } else {
+    filteredData = filteredData.slice(0, 5);
+  }
+
   return (
     <section id="serv" className="what-we-do">
       <h4 className="what-we-do__subtitle">WHAT WE DO</h4>
       <h2 className="what-we-do__title">Our Service</h2>
       <div className="what-we-do__button-container">
-        <button className="what-we-do__button">ALL</button>
-        <button className="what-we-do__button">INTERIOR DESIGN</button>
-        <button className="what-we-do__button">ARCHITECTURE</button>
-        <button className="what-we-do__button">PLANNING</button>
+        <button
+          className="what-we-do__button"
+          onClick={() => handleCategoryClick("all")}
+        >
+          ALL
+        </button>
+        <button
+          className="what-we-do__button"
+          onClick={() => handleCategoryClick("Interior Design")}
+        >
+          INTERIOR DESIGN
+        </button>
+        <button
+          className="what-we-do__button"
+          onClick={() => handleCategoryClick("Architecture")}
+        >
+          ARCHITECTURE
+        </button>
+        <button
+          className="what-we-do__button"
+          onClick={() => handleCategoryClick("Planning")}
+        >
+          PLANNING
+        </button>
       </div>
       <div className="services">
-        <div className="services__card services__card--white">
-          <img className="services__img" src={designImg} alt="design" />
-          <div className="services__text-container">
-            <h3 className="services__title">Interior Design1</h3>
-            <p className="services__text">
-              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-              tempor incididunt ut labore.
-            </p>
+        {filteredData.slice(0, 5).map((item) => (
+          <div
+            className={`services__card ${
+              item.category === "Architecture"
+                ? "services__card--brown"
+                : "services__card--white"
+            }`}
+            key={item.id}
+          >
+            <img
+              className="services__img"
+              src={require(`../assets/images/${item.image}`)}
+              alt={item.title}
+            />
+            <div className="services__text-container">
+              <h3
+                className={`services__title ${
+                  item.category === "Architecture"
+                    ? "services__title--white"
+                    : ""
+                }`}
+              >
+                {item.title}
+              </h3>
+              <p
+                className={`services__text ${
+                  item.category === "Architecture"
+                    ? "services__text--white"
+                    : ""
+                }`}
+              >
+                {item.description}
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="services__card services__card--brown">
-          <img className="services__img" src={arcImg} alt="architect" />
-          <div className="services__text-container">
-            <h3 className="services__title services__title--white">
-              Architecture 1
-            </h3>
-            <p className="services__text services__text--white">
-              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-              tempor incididunt ut labore.
-            </p>
-          </div>
-        </div>
-        <div className="services__card services__card--white">
-          <img className="services__img" src={planImg} alt="planning" />
-          <div className="services__text-container">
-            <h3 className="services__title">Planning 1</h3>
-            <p className="services__text">
-              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-              tempor incididunt ut labore.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
