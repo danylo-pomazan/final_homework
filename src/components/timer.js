@@ -4,7 +4,7 @@ const IdleTimer = () => {
   const [lastInteractionTime, setLastInteractionTime] = useState(Date.now());
   const [isActive, setIsActive] = useState(true);
 
-  const idleTime = 6000; // 1 minute in milliseconds
+  const idleTime = 60000; // 1 minute in milliseconds
 
   useEffect(() => {
     let timer;
