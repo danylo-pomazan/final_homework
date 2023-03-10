@@ -18,48 +18,13 @@ import LatestNews from "./components/latestNews";
 import SignUp from "./components/signUp";
 import Footer from "./components/footer";
 import Animation from "./components/animation";
+import Timer from "./components/timer";
 
 const LoadingScreen = forwardRef((props, ref) => {
   return <Animation ref={ref} />;
 });
 
 const App = () => {
-  const [isActive, setIsActive] = useState(true);
-
-  useEffect(() => {
-    let timer;
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        setIsActive(false);
-      } else {
-        setIsActive(true);
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    const startTimer = () => {
-      timer = setTimeout(() => {
-        if (isActive) {
-          if (window.confirm("Ви ще тут?")) {
-            setIsActive(true);
-            startTimer();
-          } else {
-            setIsActive(false);
-            window.close();
-          }
-        }
-      }, 60000);
-    };
-
-    startTimer();
-
-    return () => {
-      clearTimeout(timer);
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, [isActive]);
-
   const [isLoading, setIsLoading] = useState(true);
   const nodeRef = useRef(null);
   const loadingScreenRef = useRef(null);
@@ -85,10 +50,11 @@ const App = () => {
         unmountOnExit
         nodeRef={nodeRef}
       >
-        <LoadingScreen ref={nodeRef} />
+        <LoadingScreen ref={loadingScreenRef} />
       </CSSTransition>
       {!isLoading && (
         <>
+          <Timer />
           <Header />
           <WhatWeDo />
           <AboutUs />
