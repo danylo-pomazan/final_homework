@@ -131,5 +131,17 @@
       justify-content: space-around;
       gap: 25px;
     }
+    &__title {
+      max-width: 500px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      max-width: 500px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
