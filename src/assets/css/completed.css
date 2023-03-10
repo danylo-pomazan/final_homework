@@ -99,3 +99,9 @@
   margin-top: 87px;
   margin-bottom: 87px;
 }
+
+@media (max-width: 760px) {
+  .completed {
+    display: none;
+  }
+}

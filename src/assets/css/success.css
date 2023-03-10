@@ -74,3 +74,44 @@
   mix-blend-mode: lighten;
   background-color: #ffffff;
 }
+
+@media (max-width: 760px) {
+  .success__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .success__image {
+    width: clamp(100px, 100%, 500px);
+  }
+  .success__image-container {
+    width: clamp(100px, 100%, 500px);
+  }
+  .success__extra-title {
+    width: clamp(500px, 100%, 760px);
+    text-align: center;
+  }
+  .success__extra-title-back {
+    text-align: center;
+    width: clamp(500px, 100%, 760px);
+  }
+  .success__text-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .success__title {
+    text-align: center;
+  }
+}

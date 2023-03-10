@@ -49,7 +49,7 @@ const App = () => {
             window.close();
           }
         }
-      }, 6000000);
+      }, 60000);
     };
 
     startTimer();

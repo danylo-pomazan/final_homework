@@ -55,3 +55,21 @@
     margin: 0;
   }
 }
+@media (max-width: 760px) {
+  .testimonials {
+    margin-top: 20px;
+    &__subtitle {
+      padding-top: 20px;
+    }
+    &__button {
+      &--inactive {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &--active {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -114,3 +114,42 @@
     margin-top: 23px;
   }
 }
+
+@media (max-width: 760px) {
+  .what-we-do {
+    margin-top: 30px;
+    &__subtitle {
+      text-align: center;
+      min-width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px;
+    }
+    &__title {
+      text-align: center;
+      min-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__button-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      max-width: 500px;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .services {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+    &__card {
+      margin-top: 2px;
+    }
+  }
+}

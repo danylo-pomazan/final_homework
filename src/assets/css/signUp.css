@@ -157,3 +157,28 @@
   margin-bottom: 17px;
   padding-top: 93px;
 }
+
+@media (max-width: 760px) {
+  .sign-up__form {
+    max-width: 500px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px;
+  }
+  .sign-up__input--mail {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .sign-up__input--name {
+    width: 180px;
+  }
+  .sign-up__input--surname {
+    width: 180px;
+  }
+  .sign-up__input-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 25px;
+  }
+}
