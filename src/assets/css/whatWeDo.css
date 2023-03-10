@@ -144,3 +144,52 @@
   color: #212121;
   margin-top: 23px;
 }
+
+@media (max-width: 760px) {
+  .what-we-do {
+    margin-top: 30px;
+  }
+  .what-we-do__subtitle {
+    text-align: center;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .what-we-do__title {
+    text-align: center;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .what-we-do__button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 10px;
+    max-width: 500px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .services__card {
+    margin-top: 2px;
+  }
+}

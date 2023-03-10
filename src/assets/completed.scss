@@ -74,3 +74,8 @@
     margin-bottom: 87px;
   }
 }
+@media (max-width: 760px) {
+  .completed {
+    display: none;
+  }
+}

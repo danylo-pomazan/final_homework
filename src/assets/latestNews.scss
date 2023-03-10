@@ -86,3 +86,10 @@
     margin: 0;
   }
 }
+@media (max-width: 760px) {
+  .news {
+    &__container-column {
+      align-items: center;
+    }
+  }
+}

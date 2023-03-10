@@ -63,3 +63,20 @@
   display: block;
   margin: 0;
 }
+
+@media (max-width: 760px) {
+  .testimonials {
+    margin-top: 20px;
+  }
+  .testimonials__subtitle {
+    padding-top: 20px;
+  }
+  .testimonials__button--inactive {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .testimonials__button--active {
+    margin-bottom: 20px;
+  }
+}

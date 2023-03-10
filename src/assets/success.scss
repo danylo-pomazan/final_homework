@@ -63,3 +63,34 @@
     background-color: #ffffff;
   }
 }
+@media (max-width: 760px) {
+  .success {
+    &__container {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__image {
+      width: clamp(100px, 100%, 500px);
+    }
+    &__image-container {
+      width: clamp(100px, 100%, 500px);
+    }
+    &__extra-title {
+      width: clamp(500px, 100%, 760px);
+      text-align: center;
+    }
+    &__extra-title-back {
+      text-align: center;
+      width: clamp(500px, 100%, 760px);
+    }
+    &__text-container {
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}

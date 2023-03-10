@@ -108,3 +108,28 @@
     padding-top: 93px;
   }
 }
+@media (max-width: 760px) {
+  .sign-up {
+    &__form {
+      max-width: 500px;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+    &__input {
+      &--mail {
+        width: 400px;
+        margin-bottom: 20px;
+      }
+      &--name {
+        width: 180px;
+      }
+      &--surname {
+        width: 180px;
+      }
+    }
+    &__input-container {
+      justify-content: space-around;
+      gap: 25px;
+    }
+  }
+}
